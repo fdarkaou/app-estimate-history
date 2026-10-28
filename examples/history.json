@@ -1,0 +1,1172 @@
+{
+ "app": {
+  "storeId": "0000000000",
+  "name": "Example Calorie Tracker",
+  "iconUrl": null,
+  "genre": "Health & Fitness",
+  "category": "health_and_fitness",
+  "developerName": null,
+  "rating": 4.7,
+  "totalRatings": 12450
+ },
+ "data": [
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-27T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 32.7,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 66000,
+     "mid": 138000,
+     "high": 287000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 57000,
+     "mid": 119000,
+     "high": 248000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 960000,
+     "mid": 2001000,
+     "high": 4162000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 864000,
+     "mid": 1801000,
+     "high": 3746000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-26T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 32.4,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 65000,
+     "mid": 136000,
+     "high": 283000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 56000,
+     "mid": 117000,
+     "high": 243000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 947000,
+     "mid": 1972000,
+     "high": 4102000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 852000,
+     "mid": 1775000,
+     "high": 3692000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-25T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 32.1,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 64000,
+     "mid": 134000,
+     "high": 279000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 55000,
+     "mid": 115000,
+     "high": 239000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 933000,
+     "mid": 1943000,
+     "high": 4041000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 840000,
+     "mid": 1749000,
+     "high": 3638000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-24T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 31.8,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 63000,
+     "mid": 132000,
+     "high": 275000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 55000,
+     "mid": 114000,
+     "high": 237000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 919000,
+     "mid": 1914000,
+     "high": 3981000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 827000,
+     "mid": 1723000,
+     "high": 3584000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-23T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 31.5,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 62000,
+     "mid": 130000,
+     "high": 270000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 54000,
+     "mid": 112000,
+     "high": 233000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 905000,
+     "mid": 1885000,
+     "high": 3921000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 815000,
+     "mid": 1697000,
+     "high": 3530000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-22T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 31.2,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 63000,
+     "mid": 132000,
+     "high": 275000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 55000,
+     "mid": 114000,
+     "high": 237000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 919000,
+     "mid": 1914000,
+     "high": 3981000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 827000,
+     "mid": 1723000,
+     "high": 3584000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-21T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 30.9,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 62000,
+     "mid": 130000,
+     "high": 270000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 54000,
+     "mid": 112000,
+     "high": 233000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 905000,
+     "mid": 1885000,
+     "high": 3921000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 815000,
+     "mid": 1697000,
+     "high": 3530000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-20T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 30.6,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 61000,
+     "mid": 128000,
+     "high": 266000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 53000,
+     "mid": 110000,
+     "high": 229000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 891000,
+     "mid": 1856000,
+     "high": 3860000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 802000,
+     "mid": 1670000,
+     "high": 3474000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-19T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 30.3,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 60000,
+     "mid": 126000,
+     "high": 262000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 52000,
+     "mid": 108000,
+     "high": 225000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 877000,
+     "mid": 1827000,
+     "high": 3800000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 789000,
+     "mid": 1644000,
+     "high": 3420000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-18T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 30,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 60000,
+     "mid": 124000,
+     "high": 258000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 51000,
+     "mid": 107000,
+     "high": 223000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 863000,
+     "mid": 1798000,
+     "high": 3740000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 777000,
+     "mid": 1618000,
+     "high": 3365000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-17T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 29.7,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 60000,
+     "mid": 126000,
+     "high": 262000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 52000,
+     "mid": 108000,
+     "high": 225000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 877000,
+     "mid": 1827000,
+     "high": 3800000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 789000,
+     "mid": 1644000,
+     "high": 3420000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-16T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 29.4,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 60000,
+     "mid": 124000,
+     "high": 258000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 51000,
+     "mid": 107000,
+     "high": 223000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 863000,
+     "mid": 1798000,
+     "high": 3740000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 777000,
+     "mid": 1618000,
+     "high": 3365000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-15T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 29.1,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 59000,
+     "mid": 122000,
+     "high": 254000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 50000,
+     "mid": 105000,
+     "high": 218000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 849000,
+     "mid": 1769000,
+     "high": 3680000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 764000,
+     "mid": 1592000,
+     "high": 3311000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-14T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 28.8,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 58000,
+     "mid": 120000,
+     "high": 250000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 49000,
+     "mid": 103000,
+     "high": 214000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 835000,
+     "mid": 1740000,
+     "high": 3619000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 752000,
+     "mid": 1566000,
+     "high": 3257000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-13T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 28.5,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 57000,
+     "mid": 118000,
+     "high": 245000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 48000,
+     "mid": 101000,
+     "high": 210000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 821000,
+     "mid": 1711000,
+     "high": 3559000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 739000,
+     "mid": 1540000,
+     "high": 3203000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-12T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 28.2,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 58000,
+     "mid": 120000,
+     "high": 250000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 49000,
+     "mid": 103000,
+     "high": 214000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 835000,
+     "mid": 1740000,
+     "high": 3619000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 752000,
+     "mid": 1566000,
+     "high": 3257000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-11T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 27.9,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 57000,
+     "mid": 118000,
+     "high": 245000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 48000,
+     "mid": 101000,
+     "high": 210000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 821000,
+     "mid": 1711000,
+     "high": 3559000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 739000,
+     "mid": 1540000,
+     "high": 3203000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-10T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 27.6,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 56000,
+     "mid": 116000,
+     "high": 241000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 48000,
+     "mid": 100000,
+     "high": 208000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 807000,
+     "mid": 1682000,
+     "high": 3499000
+    }
+   },
+   "previousMonthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 727000,
+     "mid": 1514000,
+     "high": 3149000
+    }
+   },
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-09T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 27.3,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 55000,
+     "mid": 114000,
+     "high": 237000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 47000,
+     "mid": 98000,
+     "high": 204000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 793000,
+     "mid": 1653000,
+     "high": 3438000
+    }
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-08T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 27,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 54000,
+     "mid": 112000,
+     "high": 233000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 46000,
+     "mid": 96000,
+     "high": 200000
+    }
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 780000,
+     "mid": 1624000,
+     "high": 3378000
+    }
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-07T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 26.7,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 55000,
+     "mid": 114000,
+     "high": 237000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 793000,
+     "mid": 1653000,
+     "high": 3438000
+    }
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-06T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 26.4,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 54000,
+     "mid": 112000,
+     "high": 233000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 780000,
+     "mid": 1624000,
+     "high": 3378000
+    }
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-05T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 26.1,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 53000,
+     "mid": 110000,
+     "high": 229000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 766000,
+     "mid": 1595000,
+     "high": 3318000
+    }
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-04T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 25.8,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 52000,
+     "mid": 108000,
+     "high": 225000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "monthlyRevenue": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 752000,
+     "mid": 1566000,
+     "high": 3257000
+    }
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-03T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 25.5,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 51000,
+     "mid": 106000,
+     "high": 220000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "monthlyRevenue": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-02T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 25.2,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 52000,
+     "mid": 108000,
+     "high": 225000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "monthlyRevenue": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-10-01T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 24.9,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 51000,
+     "mid": 106000,
+     "high": 220000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "monthlyRevenue": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-09-30T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": 24.6,
+   "monthlyInstalls": {
+    "kind": "range",
+    "scope": "worldwide",
+    "range": {
+     "low": 50000,
+     "mid": 104000,
+     "high": 216000
+    }
+   },
+   "previousMonthlyInstalls": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "monthlyRevenue": {
+    "kind": "below_floor",
+    "scope": "worldwide",
+    "ceiling": 5000
+   },
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-09-29T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": null,
+   "monthlyInstalls": null,
+   "previousMonthlyInstalls": null,
+   "monthlyRevenue": null,
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  },
+  {
+   "storeId": "0000000000",
+   "platform": "ios",
+   "source": "peekpanda",
+   "observedAt": "2026-09-28T00:00:00.000Z",
+   "country": "us",
+   "ratingVelocityPerDay": null,
+   "monthlyInstalls": null,
+   "previousMonthlyInstalls": null,
+   "monthlyRevenue": null,
+   "previousMonthlyRevenue": null,
+   "currency": "USD"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+# Example: post rival apps' estimate trend every Monday. Disabled until you set ENABLE_ESTIMATES=true.
+# Secrets: PEEKPANDA_TOKEN (PeekPanda API key), ESTIMATES_WEBHOOK_URL (Slack or Discord incoming webhook).
+name: weekly-estimates
+on:
+  schedule:
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+jobs:
+  estimates:
+    if: vars.ENABLE_ESTIMATES == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Estimate history report
+        env:
+          PEEKPANDA_TOKEN: ${{ secrets.PEEKPANDA_TOKEN }}
+          ESTIMATES_WEBHOOK_URL: ${{ secrets.ESTIMATES_WEBHOOK_URL }}
+        run: |
+          # One call per app, made once; the summary and CSV are built from the saved JSON.
+          # Replace these example ids with the apps you watch.
+          node cli.js 1234567890 1234567891 --limit 90 --format json > estimates.json
+          node cli.js --file estimates.json --webhook "$ESTIMATES_WEBHOOK_URL" >> "$GITHUB_STEP_SUMMARY"
+          node cli.js --file estimates.json --format csv > estimates.csv
+      - uses: actions/upload-artifact@v4
+        with:
+          name: estimates
+          path: |
+            estimates.csv
+            estimates.json

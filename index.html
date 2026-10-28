@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>App estimate history chart: how a rival iOS app's downloads and revenue moved</title>
+<meta name="description" content="Paste a PeekPanda estimate history response and chart a rival iOS app's daily monthly download and revenue estimate ranges: change over the window, month-over-month, peak, and days with no estimate. Runs in your browser.">
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; max-width: 1000px; margin: 2rem auto; padding: 0 1rem; color: #1b1b1f; }
+  textarea { width: 100%; min-height: 160px; font: 13px ui-monospace, monospace; }
+  button, select { padding: .45rem .9rem; margin: .5rem .5rem .5rem 0; cursor: pointer; }
+  table { border-collapse: collapse; width: 100%; margin-top: 1rem; font-size: 14px; }
+  th, td { border-bottom: 1px solid #ddd; padding: .35rem .5rem; text-align: left; }
+  .muted { color: #777; } .err { color: #cf222e; white-space: pre-wrap; }
+  .cards { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
+  .card { border: 1px solid #ddd; border-radius: 6px; padding: .6rem .8rem; flex: 1 1 260px; }
+  .card b { display: block; font-size: 17px; }
+  pre { background: #f6f8fa; padding: .75rem; overflow-x: auto; font-size: 13px; }
+  svg text { font: 12px system-ui, sans-serif; fill: #333; }
+  footer { margin-top: 2.5rem; font-size: 13px; color: #555; }
+</style>
+</head>
+<body>
+<h1>App estimate history chart</h1>
+<p>See how one iOS app's monthly downloads and monthly revenue estimates moved, day by day, over up to a year. Paste an estimate history response below. Nothing leaves your browser.</p>
+<textarea id="in" spellcheck="false" placeholder='{"app":{"storeId":"...","name":"..."},"data":[{"observedAt":"...","monthlyInstalls":{...},"monthlyRevenue":{...}}]}'></textarea>
+<div>
+  <button id="go">Chart it</button>
+  <button id="ex">Load example data</button>
+  <label>Chart <select id="by"><option value="monthlyRevenue">monthly revenue</option><option value="monthlyInstalls">monthly downloads</option></select></label>
+  <button id="csv" disabled>Download CSV</button>
+</div>
+<div id="err" class="err"></div>
+<div id="out"></div>
+
+<h2>Where to get the JSON</h2>
+<p>The input is the estimate history response from <a href="https://peekpanda.com">PeekPanda</a>, an iOS competitor catalogue that keeps dated evidence and nightly download and revenue estimates for each app. Use the app's numeric App Store id, the number after <code>id</code> in its apps.apple.com link:</p>
+<pre>curl --get https://api.peekpanda.com/v1/competitors/ios/1234567890/estimates/history \
+  -H "Authorization: Bearer $PEEKPANDA_TOKEN" \
+  -H 'x-genviral-tenancy: personal' \
+  --data-urlencode 'limit=90'</pre>
+<p>Over MCP this is the <code>get_app</code> tool with action <code>estimates</code>. You need a PeekPanda account and an API key; the <a href="https://peekpanda.com/docs/get-competitor-estimate-history">estimate history reference</a> lists the fields and errors. <code>limit</code> takes 1 to 366 observations.</p>
+
+<h2>How to read it</h2>
+<ul>
+  <li>The shaded band is the low-to-high estimate range and the line is the mid. They are worldwide monthly App Store estimates in USD, not numbers from Apple or the developer.</li>
+  <li>"Change in window" compares the newest mid with the oldest day that had a range. Month-over-month compares the newest mid with the previous-month value on the same observation.</li>
+  <li>Days under the floor (below 5,000 a month) and days with no estimate are counted, never drawn as zero.</li>
+  <li>Use the ranges for direction and scale, not for exact figures.</li>
+</ul>
+<p>Command-line version, tests and a weekly GitHub Actions example: <a href="https://github.com/fdarkaou/app-estimate-history">github.com/fdarkaou/app-estimate-history</a>.</p>
+<footer>MIT licensed sample. Example data is made up and is not a real app.</footer>
+
+<script type="module">
+import { points, summarize, describe, pct, compact, toCsv } from './history.js';
+const $ = (id) => document.getElementById(id);
+let resp = null;
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+function chart(pts, key, money) {
+  const W = 960, H = 260, L = 64, R = 12, T = 12, B = 28;
+  const ranged = pts.map((p, i) => ({ i, e: p[key] })).filter((x) => x.e?.kind === 'range');
+  if (!ranged.length) return '<p class="muted">No ranged estimate in this window to chart.</p>';
+  const max = Math.max(...ranged.map((x) => x.e.range.high)) * 1.05;
+  const x = (i) => L + (pts.length === 1 ? (W - L - R) / 2 : (i * (W - L - R)) / (pts.length - 1));
+  const y = (v) => T + (H - T - B) * (1 - v / max);
+  const band = ranged.map((p) => `${x(p.i)},${y(p.e.range.high)}`).concat([...ranged].reverse().map((p) => `${x(p.i)},${y(p.e.range.low)}`)).join(' ');
+  const line = ranged.map((p) => `${x(p.i)},${y(p.e.range.mid)}`).join(' ');
+  const pre = money ? '$' : '';
+  const ticks = [0, 0.25, 0.5, 0.75, 1].map((f) => `<line x1="${L}" x2="${W - R}" y1="${y(max * f)}" y2="${y(max * f)}" stroke="#eee"/><text x="${L - 6}" y="${y(max * f) + 4}" text-anchor="end">${pre}${compact(max * f)}</text>`).join('');
+  const gaps = pts.map((p, i) => (p[key]?.kind === 'range' ? '' : `<rect x="${x(i) - 2}" y="${H - B}" width="4" height="6" fill="${p[key]?.kind === 'below_floor' ? '#d4a72c' : '#bbb'}"><title>${p.day}: ${p[key]?.kind === 'below_floor' ? 'under the floor' : 'unknown'}</title></rect>`)).join('');
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="estimate range over time">${ticks}
+    <polygon points="${band}" fill="#0969da" fill-opacity=".15"/><polyline points="${line}" fill="none" stroke="#0969da" stroke-width="2"/>${gaps}
+    <text x="${L}" y="${H - 6}">${pts[0].day}</text><text x="${W - R}" y="${H - 6}" text-anchor="end">${pts[pts.length - 1].day}</text></svg>
+    <p class="muted">Blue band: low to high. Line: mid. Grey ticks: no estimate. Yellow ticks: under the floor.</p>`;
+}
+
+function card(label, s, money) {
+  const bits = [s.mom != null ? `${pct(s.mom)} vs a month earlier` : null, s.change != null ? `${pct(s.change)} since ${s.changeFrom}` : null,
+    s.belowFloorDays ? `${s.belowFloorDays} days under the floor` : null, s.unknownDays ? `${s.unknownDays} unknown` : null].filter(Boolean);
+  return `<div class="card">${label}<b>${esc(describe(s.latest, money))}</b><span class="muted">${esc(s.latestDay ?? '')}${bits.length ? ' · ' + esc(bits.join(' · ')) : ''}</span></div>`;
+}
+
+function render() {
+  $('err').textContent = ''; $('out').innerHTML = '';
+  try { resp = JSON.parse($('in').value); if (Array.isArray(resp)) resp = resp[0]; } catch (e) { $('err').textContent = 'That is not valid JSON: ' + e.message; return; }
+  const pts = points(resp);
+  if (!pts.length) { $('err').textContent = 'No observations found. Expected an object with a data array of dated estimates.'; return; }
+  const key = $('by').value, money = key === 'monthlyRevenue', a = resp.app ?? {};
+  const rows = [...pts].reverse().map((p) => `<tr><td>${p.day}</td><td>${esc(describe(p.monthlyInstalls))}</td><td>${esc(describe(p.monthlyRevenue, true))}</td><td>${Number.isFinite(p.ratingVelocityPerDay) ? p.ratingVelocityPerDay : ''}</td></tr>`).join('');
+  $('out').innerHTML = `<h2>${esc(a.name ?? 'Unknown app')} <span class="muted">${esc(a.storeId ?? '')}</span></h2>
+    <div class="cards">${card('Monthly downloads', summarize(resp, 'monthlyInstalls'), false)}${card('Monthly revenue', summarize(resp, 'monthlyRevenue'), true)}</div>
+    ${chart(pts, key, money)}
+    <table><thead><tr><th>Day</th><th>Monthly downloads</th><th>Monthly revenue</th><th>Ratings/day</th></tr></thead><tbody>${rows}</tbody></table>`;
+  $('csv').disabled = false;
+}
+
+$('go').onclick = render;
+$('by').onchange = () => resp && render();
+$('ex').onclick = async () => { $('in').value = await (await fetch('examples/history.json')).text(); render(); };
+$('csv').onclick = () => {
+  const url = URL.createObjectURL(new Blob([toCsv(resp)], { type: 'text/csv' }));
+  Object.assign(document.createElement('a'), { href: url, download: `estimate-history-${resp?.app?.storeId ?? 'app'}.csv` }).click();
+  URL.revokeObjectURL(url);
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "app-estimate-history",
+  "version": "1.0.0",
+  "description": "Chart how a rival iOS app's monthly download and revenue estimates moved over up to a year of daily PeekPanda observations: change in window, month-over-month, peaks, gaps. Markdown/CSV/JSON, optional Slack or Discord post.",
+  "type": "module",
+  "bin": { "app-estimate-history": "cli.js" },
+  "scripts": { "test": "node --test test/" },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "author": "Fekri Darkaoui",
+  "repository": { "type": "git", "url": "https://github.com/fdarkaou/app-estimate-history.git" },
+  "homepage": "https://fdarkaou.github.io/app-estimate-history/",
+  "keywords": ["app-store", "ios", "app-revenue", "downloads", "competitor-analysis", "time-series", "peekpanda"]
+}
